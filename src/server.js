@@ -11,6 +11,4 @@ initWebRoutes(app);
 
 const PORT = process.env.PORT || 8888;
 
-app.listen(PORT, () => {
-  console.log("app dang chay tren cong" + PORT);
-});
+app.listen(PORT, () => {});
