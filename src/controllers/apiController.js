@@ -5,4 +5,6 @@ const testApi = (req, res) => {
   });
 };
 
-module.exports = { testApi };
+const handleRegister = (req, res) => {};
+
+module.exports = { testApi, handleRegister };
