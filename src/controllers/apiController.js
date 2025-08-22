@@ -25,7 +25,7 @@ const handleRegister = async (req, res) => {
       });
     }
 
-    let data = loginRegisterService.registerNewUser(req.body);
+    let data = await loginRegisterService.registerNewUser(req.body);
 
     return res.status(200).json({
       EM: data.EM,
@@ -41,4 +41,11 @@ const handleRegister = async (req, res) => {
   }
 };
 
-module.exports = { testApi, handleRegister };
+const handleLogin = async (req, res) => {
+  return res.status(200).json({
+    message: "ok",
+    data: "test-api",
+  });
+};
+
+module.exports = { testApi, handleRegister, handleLogin };
