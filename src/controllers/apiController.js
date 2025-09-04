@@ -46,7 +46,7 @@ const handleLogin = async (req, res) => {
     let data = await loginRegisterService.handleUserLogin(req.body);
     return res.status(200).json({
       EM: data.EM,
-      EC: data.DT,
+      EC: data.EC,
       DT: data.DT,
     });
   } catch (e) {
